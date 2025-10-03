@@ -4,13 +4,13 @@ import json
 import numpy as np
 
 # --- Load model, scaler, and feature columns ---
-with open("linear_regression_model.pkl", "rb") as f:
+with open("Manufacturing/linear_regression_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("scaler.pkl", "rb") as f:
+with open("Manufacturing/scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
-with open("feature_columns.json", "r") as f:
+with open("Manufacturing/feature_columns.json", "r") as f:
     feature_columns = json.load(f)
 
 # --- Streamlit App UI ---
